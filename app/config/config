@@ -3,7 +3,7 @@ var expiry = 60;
 
 var dmpDeviceBroker = "myDmpBroker";
 
-var defaultApp = "smart-water";
+var defaultApp = "smart-alarm";
 
 var businessRuleScript = "app/entities/rules/decisionTable";
 

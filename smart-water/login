@@ -1,2 +1,0 @@
-var themeloader = require("app/api/themeloader");
-return themeloader.serveTheme("login/view/login.html", {"theme":"smart-water", "style": false, "config": true})
