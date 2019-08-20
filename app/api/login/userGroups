@@ -5,7 +5,6 @@ if(getDevice.metadata.status=="failure"){
   getDevice=user.get(request.user.id);
 }
 if(getDevice.metadata.status == "success"){
-    var authToken = getDevice.result["auth_token"];
     var userGroups = getDevice.result["groups"];
       
     if (userGroups == null) {
