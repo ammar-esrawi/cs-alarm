@@ -1,7 +1,9 @@
 var device = require("device");
-
+var user = require("user");
 var getDevice = device.get(request.user.id);
-
+if(getDevice.metadata.status=="failure"){
+  getDevice=user.get(request.user.id);
+}
 if(getDevice.metadata.status == "success"){
     var authToken = getDevice.result["auth_token"];
     var userGroups = getDevice.result["groups"];
